@@ -26,7 +26,7 @@ $(document).ready(function(){
 function checkNum(rawNum){
 	//checks if number, if it is a number, returns number back number to max variable
 	//if not number loops prompt asking for new number, then return that number as max
-	while(isNaN(rawNum)){
+	while(isNaN(rawNum)||rawNum>100||rawNum<1){
 		rawNum=prompt("This is not a number between 1-100 please reenter number:");
 	}
 	return rawNum;
